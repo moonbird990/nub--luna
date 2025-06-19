@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nub Luna the Unknown</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="glowing-header">
+            <h1 class="main-title">NUB LUNA</h1>
+            <h2 class="subtitle">THE UNKNOWN</h2>
+            <div class="powered-by">Advanced AI Assistant</div>
+        </header>
+
+        <div class="chat-container">
+            <div id="chat-history" class="chat-history">
+                <!-- AI greeting message -->
+                <div class="message ai-message">
+                    <div class="message-header">
+                        <span class="ai-label">NUB LUNA</span>
+                        <span class="model-indicator">SYSTEM</span>
+                    </div>
+                    <div class="message-content">
+                        Greetings. I am Nub Luna, the Unknown. How may I assist you today?
+                    </div>
+                    <div class="message-footer">Just now</div>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <textarea id="user-input" placeholder="Enter your query... (Shift+Enter for new line)"></textarea>
+                <button id="send-btn">
+                    <span class="button-text">ASK</span>
+                    <span class="button-icon">➤</span>
+                </button>
+            </div>
+        </div>
+
+        <footer class="status-bar">
+            <div class="status-item">
+                <span class="status-label">MODEL:</span>
+                <span id="model-status" class="status-value">READY</span>
+            </div>
+            <div class="status-item">
+                <span class="status-label">MEMORY:</span>
+                <span id="memory-status" class="status-value">0 ITEMS</span>
+            </div>
+            <div class="status-item">
+                <span class="status-label">STATUS:</span>
+                <span id="system-status" class="status-value">ONLINE</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
